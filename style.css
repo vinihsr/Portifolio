@@ -13,8 +13,8 @@ body{
 .header-container{
     height: 100vh;
     width: 100vw;
-    background-color: blueviolet;
-    background-image: url("img/background.png") ;
+    background-color: rgb(131, 44, 231);
+    background-image: url("img/backgroundP.png") ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -56,7 +56,7 @@ h2{
 }
 
 .social-media a:hover{
-    background-color: cadetblue;
+    background-color: rgb(116, 231, 235);
 }
 
 .checkbox-container{
@@ -212,7 +212,7 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    background-color: rgb(131, 44, 231);
     background-position: center;
     background-repeat: no-repeat;
     filter: grayscale(0.7);
@@ -291,7 +291,7 @@ h2{
 .footer{
     width: 100%;
     height: 100px;
-    background-color: blueviolet;
+    background-color: rgb(131, 44, 231);
     display: flex;
     align-items: center;
     justify-content: center;
