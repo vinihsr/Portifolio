@@ -9,30 +9,9 @@
     </header>
     <div class="container">
     <Nav class="links">
-        <p>Projects with JavaScript:</p>
-        <a href="http://https://vinicius123henrique321.github.io/GeradorAutomatico/">Automatic password generator</a>
-        <br>
-        <a href="http://https://vinicius123henrique321.github.io/ToDoList/">To do list</a>
-        <br>
-        <a href="http://https://vinicius123henrique321.github.io/calculadora_js/">Calculator</a>
-        <br>
-        <p>Projects with Python (only links to my repositories on Github):</p>
-        <a href="http://https://github.com/vinicius123henrique321/forca_python">Hangman game</a>
-        <br>
-        <a href="https://github.com/vinicius123henrique321/projeto_de_automacao">Automation projects</a>
-        <br>
-        <a href="https://github.com/vinicius123henrique321/flappy-bird-simplegame">Flappy bird simple game</a>
-        <br>
-        <a href="https://github.com/vinicius123henrique321/analise_de_dados_com_IA">Data analysis with artificial intelligence</a>
-        <br>
-        <a href="https://github.com/vinicius123henrique321/teste_envio_de_email_e_sms">Email e Sms sending test</a>
-        <br>
-        <p>Projects with Java (only links to my repositories on Github):    </p>
+
         <a href="https://github.com/vinicius123henrique321/exmp_form_java">Simple c.r.u.d</a>
         <br>
-        <a href="https://github.com/vinicius123henrique321/javafx_teste">Test with framework javafx</a>
-        <br>
-        <a href="https://github.com/vinicius123henrique321/guessing_name_java">Guessing name</a>
     </Nav>
     <aside>
 

@@ -213,10 +213,9 @@ h2{
     align-items: center;
     justify-content: center;
     background-color: blueviolet;
-    background-image: url(./img/background.png);
     background-position: center;
     background-repeat: no-repeat;
-    filter: grayscale(0.5);
+    filter: grayscale(0.7);
     color: #1E1E2A;
     cursor: pointer;
     transition: o.5s ease-in-out;
