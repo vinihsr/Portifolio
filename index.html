@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -40,17 +42,24 @@
                 </div>
             </div>
         </div>
-        <h1>Vinicius Henrique</h1>
-        <h2>Front-end developer</h2>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/vinicius-henrique-1a016524a/" target="_blank">Linkedin</a>
-            <a href="https://github.com/vinicius123henrique321" target="_blank">Github</a>
-            <a href="https://www.instagram.com/vinicius.scss/" target="_blank">Instagram</a>
+        <div class="header-content">
+            <div class="social-media">
+                <h1>Vinicius Henrique</h1>
+                <h2>Front-end developer</h2>
+                <a href="https://www.linkedin.com/in/vinicius-henrique-1a016524a/" target="_blank">Linkedin</a>
+                <a href="https://github.com/vinicius123henrique321" target="_blank">Github</a>
+                <a href="https://www.instagram.com/vinicius.scss/" target="_blank">Instagram</a>
+            </div>
+            <div class="image-header">
+                <img class="image" src="../img/Design sem nome.png" alt="sla">
+            </div>
         </div>
     </header>
     <main class="container">
         <div class="card-container"> 
-            <div class="card" style="background-image: url(./img/todolist.png);">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card" style="background-image: url(./img/todolist.png);">
                 <div class="card-wrapper">
                      <h2 style="color: orangered;">To do list</h2>
                      <p style="color: orangered;">Confira no link ao lado</p>
@@ -63,7 +72,9 @@
         </div>
 
         <div class="card-container"> 
-            <div class="card" style="background-image: url(./img/Geradorsenha.png);">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card" style="background-image: url(./img/Geradorsenha.png);">
                 <div class="card-wrapper">
                      <h2 style="color:orangered;">Password generator</h2>
                      <p style="color: orangered;">confira no link ao lado</p>
@@ -75,7 +86,9 @@
         </div>
 
         <div class="card-container"> 
-            <div class="card" style="background-image: url(./img/calculadora.png);">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card" style="background-image: url(./img/calculadora.png);">
                 <div class="card-wrapper">
                      <h2 style="font-size: 35px; color: orangered;">Calculator</h2>
                      <p style="color: orangered;">confira no link ao lado</p>
@@ -87,7 +100,9 @@
         </div>
 
         <div class="card-container"> 
-            <div class="card">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
                 <div class="card-wrapper">
                      <h2 style="font-size: 35px;">Automation projects</h2>
                      <p>confira no link ao lado</p>
@@ -99,7 +114,9 @@
         </div>
 
         <div class="card-container"> 
-            <div class="card">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
                 <div class="card-wrapper">
                      <h2 style="font-size: 35px;">Flappy bird simple game</h2>
                      <p>confira no link ao lado</p>
@@ -111,7 +128,9 @@
         </div>
 
         <div class="card-container"> 
-            <div class="card">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
                 <div class="card-wrapper">
                      <h2 style="font-size: 25px;">Data analysis with artificial intelligence</h2>
                      <p>confira no link ao lado</p>
@@ -123,7 +142,9 @@
         </div>
 
         <div class="card-container"> 
-            <div class="card">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
                 <div class="card-wrapper">
                      <h2 style="font-size: 30px;">Email e Sms sending test</h2>
                      <p>confira no link ao lado</p>
@@ -135,7 +156,9 @@
         </div>
 
         <div class="card-container"> 
-            <div class="card">
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="card">
                 <div class="card-wrapper">
                      <h2 style="font-size: 35px;">Simple CRUD in Java</h2>
                      <p>confira no link ao lado</p>
@@ -152,5 +175,8 @@
         <p>Made by Vinicius</p>
         <p class="return" id="#">return to top</p>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
