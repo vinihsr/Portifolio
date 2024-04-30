@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +18,7 @@
                 <h1>Vinicius Henrique</h1>
                 <h2>Front-end developer</h2>
                 <a href="https://www.linkedin.com/in/vinicius-henrique-1a016524a/" target="_blank">Linkedin</a>
-                <a href="https://github.com/vinicius123henrique321" target="_blank">Github</a>
+                <a href="https://github.com/vinihsr" target="_blank">Github</a>
                 <a href="https://www.instagram.com/vinicius.scss/" target="_blank">Instagram</a>
             </div>
             <div>
@@ -28,127 +27,152 @@
         </div>
     </header>
     <main id="projects" class="container">
-        <div class="card-container"> 
-            <div class="card-text">
-                <p>Lista de afazeres feito com html, css e javascript.
-                Link para o <a href="http://vinicius123henrique321.github.io/ToDoList/" target="_blank" rel="noopener noreferrer">projeto</a> </p>
-            </div>
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card" style="background-image: url(./img/todolist.png);">
-                <div class="card-wrapper">
-                     <h2 style="color: orangered;">To do list</h2>
-                     <p style="color: orangered;">Confira no link ao lado</p>
-                </div>
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'sobre')">Sobre</button>
+            <button class="tablinks" onclick="openTab(event, 'projetos')">Projetos</button>
+        </div>
+          
+        <div id="sobre" class="tabcontent" style="display:block">
+            <div class="sobre">
+                <h4>
+                    Olá! Meu nome é Vinicius Henrique, tenho 20 anos e sou apaixonado pelo mundo da programação. Minha jornada começou quando entrei na faculdade aos 18 anos e desde então mergulhei de cabeça nessa área fascinante. Antes disso, eu trabalhava com vendas, seguindo os passos do meu pai, mas foi na programação que encontrei minha verdadeira paixão.
+                    
+                    Nasci em Guaratinguetá, mas desde os 7 anos moro em São José dos Campos. Sempre fui aficionado por esportes e música, são meus maiores hobbies e fontes de inspiração.
+                    
+                    Minha experiência na área de programação é breve, mas intensa. Aprendi muito com as metodologias de ensino da minha faculdade e, principalmente, com minha própria determinação e vontade de aprender. Hoje, não consigo me ver trabalhando em outra área que não esteja relacionada à programação e ao desenvolvimento de softwares. É aqui que encontro desafios estimulantes e a realização profissional que tanto almejo.
+                </h4>
+                <img src="./img/profile.jpg" alt="">
             </div>
         </div>
 
-        <div class="card-container"> 
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card" style="background-image: url(./img/Geradorsenha.png);">
-                <div class="card-wrapper">
-                     <h2 style="color:orangered;">Password generator</h2>
-                     <p style="color: orangered;">confira no link ao lado</p>
+        <div id="projetos" class="tabcontent">
+            <div class="card-container"> 
+                <div class="card-text">
+                    <p>Lista de afazeres feito com html, css e javascript.
+                    Link para o Projeto:</p>
+                    <a href="http://vinihsr.github.io/ToDoList/" target="_blank" rel="noopener noreferrer">projeto</a>
+                </div>
+                <div  class="card">
+                    <div class="card-wrapper">
+                         <h2>To do list</h2>
+                         <p>Confira no link ao lado</p>
+                    </div>
                 </div>
             </div>
-            <div class="card-text">
-                <p>Gerador de senhas automatico feito com html, css e javascript. Link para o <a href="http:////vinicius123henrique321.github.io/GeradorAutomatico/" target="_blank" rel="noopener noreferrer">projeto</a></p>
+    
+            <div class="card-container">    
+                <div class="card">
+                    <div class="card-wrapper">
+                         <h2>Password generator</h2>
+                         <p>confira no link ao lado</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <p>Gerador de senhas automatico feito com html, css e javascript. Link para o Projeto:</p>
+                    <a href="http:////vinihsr.github.io/GeradorAutomatico/" target="_blank" rel="noopener noreferrer">projeto</a>
+                </div>
             </div>
-        </div>
-
-        <div class="card-container"> 
-            <div class="card-text">
-                <p>Calculadora feita com html, css e javascript. Link para o <a href="http://vinicius123henrique321.github.io/calculadora_js/" target="_blank" rel="noopener noreferrer">projeto</a></p>
+    
+            <div class="card-container"> 
+                <div class="card-text">
+                    <p>Calculadora feita com html, css e javascript. Link para o Projeto:</p>
+                    <a href="http://vinihsr.github.io/calculadora_js/" target="_blank" rel="noopener noreferrer">projeto</a>
+                </div>
+                <div  class="card">
+                    <div class="card-wrapper">
+                         <h2>Calculator</h2>
+                         <p>confira no link ao lado</p>
+                    </div>
+                </div>
             </div>
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card" style="background-image: url(./img/calculadora.png);">
-                <div class="card-wrapper">
-                     <h2 style="font-size: 35px; color: orangered;">Calculator</h2>
-                     <p style="color: orangered;">confira no link ao lado</p>
+    
+            <div class="card-container"> 
+                <div class="card">
+                    <div class="card-wrapper">
+                         <h2 style="font-size: 35px;">Automation projects</h2>
+                         <p>confira no link ao lado</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <p>Conjunto de projetos de automação, incluindo automação de hardware e automação web.. Link para o repositório no github:</p>
+                    <a href="http://github.com/vinihsr/projeto_de_automacao" target="_blank" rel="noopener noreferrer">repositório</a>
+                </div>
+            </div>
+    
+            <div class="card-container"> 
+                <div class="card-text">
+                    <p>Jogo réplica de Flappy bird feito puramente com python. Link para o repositório no github:</p>
+                    <a href="http://github.com/vinihsr/flappy-bird-simplegame" target="_blank" rel="noopener noreferrer">repositório</a>
+                </div>
+                <div  class="card">
+                    <div class="card-wrapper">
+                         <h2 style="font-size: 35px;">Flappy bird simple game</h2>
+                         <p>confira no link ao lado</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card-container"> 
+                <div class="card">
+                    <div class="card-wrapper">
+                         <h2 style="font-size: 25px;">Data analysis with artificial intelligence</h2>
+                         <p>confira no link ao lado</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <p>Extração e obtenção de dados, ajuste, analise, modelagtem e interpretação geral de resultados. Link para o repositório no github:</p>
+                    <a href="http://github.com/vinihsr/analise_de_dados_com_IA" target="_blank" rel="noopener noreferrer">repositório</a>
+                </div>
+            </div>
+    
+            <div class="card-container"> 
+                <div class="card-text">
+                    <p>Teste de envio de Emails e Sms com python, utilizando bibliotecas para ambos(pandas/ pywin32/ twilio). Link para o repositório no github:</p>
+                    <a href="http://github.com/vinihsr/teste_envio_de_email_e_sms" target="_blank" rel="noopener noreferrer">repositório</a>
+                </div>
+                <div  class="card">
+                    <div class="card-wrapper">
+                         <h2 style="font-size: 30px;">Email e Sms sending test</h2>
+                         <p>confira no link ao lado</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card-container"> 
+                <div class="card">
+                    <div class="card-wrapper">
+                         <h2 style="font-size: 35px;">Simple CRUD in Java</h2>
+                         <p>confira no link ao lado</p>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <p>Crud simples feito com java swing. Link para o repositório no github:</p>
+                    <a href="http://github.com/vinihsr/exmp_form_java" target="_blank" rel="noopener noreferrer">repositório</a>
                 </div>
             </div>
         </div>
-
-        <div class="card-container"> 
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card">
-                <div class="card-wrapper">
-                     <h2 style="font-size: 35px;">Automation projects</h2>
-                     <p>confira no link ao lado</p>
-                </div>
-            </div>
-            <div class="card-text">
-                <p>Conjunto de projetos de automação, incluindo automação de hardware e automação web.. Link para o <a href="http://github.com/vinicius123henrique321/projeto_de_automacao" target="_blank" rel="noopener noreferrer">repositório</a> no github</p>
-            </div>
-        </div>
-
-        <div class="card-container"> 
-            <div class="card-text">
-                <p>Jogo réplica de Flappy bird feito puramente com python. Link para o <a href="http://github.com/vinicius123henrique321/flappy-bird-simplegame" target="_blank" rel="noopener noreferrer">repositório</a> no github.</p>
-            </div>
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card">
-                <div class="card-wrapper">
-                     <h2 style="font-size: 35px;">Flappy bird simple game</h2>
-                     <p>confira no link ao lado</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-container"> 
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card">
-                <div class="card-wrapper">
-                     <h2 style="font-size: 25px;">Data analysis with artificial intelligence</h2>
-                     <p>confira no link ao lado</p>
-                </div>
-            </div>
-            <div class="card-text">
-                <p>Extração e obtenção de dados, ajuste, analise, modelagtem e interpretação geral de resultados. Link para o <a href="http://github.com/vinicius123henrique321/analise_de_dados_com_IA" target="_blank" rel="noopener noreferrer">repositório</a> no github.</p>
-            </div>
-        </div>
-
-        <div class="card-container"> 
-            <div class="card-text">
-                <p>Teste de envio de Emails e Sms com python, utilizando bibliotecas para ambos(pandas/ pywin32/ twilio). Link para o <a href="http://github.com/vinicius123henrique321/teste_envio_de_email_e_sms" target="_blank" rel="noopener noreferrer">repositório</a> no github.</p>
-            </div>
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card">
-                <div class="card-wrapper">
-                     <h2 style="font-size: 30px;">Email e Sms sending test</h2>
-                     <p>confira no link ao lado</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-container"> 
-            <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000" class="card">
-                <div class="card-wrapper">
-                     <h2 style="font-size: 35px;">Simple CRUD in Java</h2>
-                     <p>confira no link ao lado</p>
-                </div>
-            </div>
-            <div class="card-text">
-                <p>Crud simples feito com java swing. Link para o <a href="http://github.com/vinicius123henrique321/exmp_form_java" target="_blank" rel="noopener noreferrer">repositório</a> no github</p>
-            </div>
-        </div>
-
     </main>
 
     <footer class="footer">
         <p>Made by Vinicius Henrique</p>
         <a class="return" href="#top">return to top</a>
     </footer>
-    <script>
-        AOS.init();
-    </script>
+
+<script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+</script>
+
 </body>
 </html>
