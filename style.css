@@ -266,7 +266,7 @@ h2{
     text-decoration: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 560px) {
     body{
         overflow-x: hidden;
         overflow-y: auto;
@@ -325,10 +325,10 @@ h2{
     }
 
     .card {
-        width: 100%; /* Adjust width of card for smaller screens */
-        height: 18rem;
+        width: 100vw; /* Adjust width of card for smaller screens */
+        height: 40vh;
         margin: 0; /* Add margin between cards */
-        border-radius: 60%;
+        border-radius: 0%;
     }
 
     .card h2{
@@ -337,5 +337,15 @@ h2{
 
     #changedcard{
         flex-direction: column-reverse;
+    }
+
+    .card:hover > .card-wrapper::before{
+        height: 30vh;
+        width: 92vw;
+        opacity: 1;
+    }
+
+    .card-wrapper::before{ 
+        border-radius: 0;
     }
 }
