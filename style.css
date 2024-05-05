@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap');
 
-body{
+body {
     margin: 0;
     border: 0;
     padding: 0;
@@ -10,19 +10,19 @@ body{
     overflow-y: auto;
 }
 
-/*HEADER*/
+/* HEADER */
 
-a{
+a {
     text-decoration: none;
     color: #000000;
 }
 
-.header-container{
+.header-container {
     height: 100vh;
     width: 100vw;
     background-color: #5328b8;
     background-image: url("./img/background.png");
-    background-repeat:round;
+    background-repeat: round;
     background-position: center;
     background-size: contain;
     display: flex;
@@ -66,7 +66,6 @@ h2{
     color: black;
     padding: 1rem 4rem;
     border: 1px solid black;
-    min-width: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -267,6 +266,76 @@ h2{
     text-decoration: none;
 }
 
+@media only screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
 
+    .header-container{
+        height: 100vh;
+    }
 
- 
+    .header-content {
+        flex-direction: column; /* Change flex-direction to column for smaller screens */
+        gap: 1rem; /* Add space between header elements */
+        align-items: center; /* Center-align items on smaller screens */
+    }
+
+    .image {
+        display: none;
+    }
+
+    .social-media {
+        margin: 0; /* Remove margin for social media links */
+    }
+
+    .social-media a {
+        padding: 0.5rem 2rem; /* Adjust padding for social media links */
+        margin: 0.5rem 0; /* Add margin between social media links */
+    }
+
+    .social-media h1 {
+        font-size: 50px; /* Decrease font size of social media heading */
+    }
+
+    .header-container {
+        padding: 2rem 5%; /* Adjust padding for smaller screens */
+    }
+
+    .sobre {
+        flex-direction: column-reverse; /* Reverse flex-direction for smaller screens */
+        align-items: center; /* Center-align items on smaller screens */
+        gap: 1rem; /* Add space between text and image */
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sobre img {
+        width: 50%; /* Adjust width of image for smaller screens */
+        max-width: 200px; /* Set max-width to avoid stretching */
+    }
+
+    .card-container {
+        flex-direction: column; /* Change flex-direction to column for smaller screens */
+        align-items: center; /* Center-align items on smaller screens */
+        margin: 1rem 0 8rem 0; /* Add margin between cards */
+
+    }
+
+    .card {
+        width: 100%; /* Adjust width of card for smaller screens */
+        height: 18rem;
+        margin: 0; /* Add margin between cards */
+        border-radius: 60%;
+    }
+
+    .card h2{
+        font-size: xx-large;
+    }
+
+    #changedcard{
+        flex-direction: column-reverse;
+    }
+}
