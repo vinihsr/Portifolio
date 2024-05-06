@@ -109,7 +109,7 @@ h2{
 /* Estilo para o conteúdo das tabs */
 .tabcontent {
     display: none;
-    padding: 20px;
+    padding-top: 20px;
     border-top: none;
 }
 
