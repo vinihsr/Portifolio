@@ -4,14 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio ( html e css ) </title>
+    <title>Portifólio (html e css)</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <style>
+        .indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 5px;
+            background: #5328b8;
+            width: 0;
+            z-index: 1000;
+        }
+
+        .arrow {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1000;
+            transition: opacity 0.3s;
+            color: #5328b8;
+        }
+
+        .arrow.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 1rem;
+            color: #5328b8;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-down .arrow-icon {
+            font-size: 2rem;
+            margin-top: 10px;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="indicator"></div>
+    <div class="arrow hidden">&#8593;</div>
+
     <header id="top" class="header-container">  
         <div class="header-content">
             <div class="social-media">
@@ -25,7 +81,12 @@
                 <img class="image" src="./img/imageHeader.png" alt="">
             </div>
         </div>
+        <div class="scroll-down">
+            Scroll Down
+            <div class="arrow-icon">&#8595;</div>
+        </div>
     </header>
+
     <main id="projects" class="container">
         <div class="tab">
             <button class="tablinks active" onclick="openTab(event, 'sobre')">Sobre</button>
@@ -113,11 +174,9 @@
             </div>
     
             <div class="card-container"> 
-                <div class="card">
-                    <div class="card-wrapper">
-                         <h2 style="font-size: 25px;">Data analysis with artificial intelligence</h2>
-                         <p>confira o link</p>
-                    </div>
+                <div class="card-wrapper">
+                     <h2 style="font-size: 25px;">Data analysis with artificial intelligence</h2>
+                     <p>confira o link</p>
                 </div>
                 <div class="card-text">
                     <p>Extração e obtenção de dados, ajuste, analise, modelagtem e interpretação geral de resultados. Link para o repositório no github:</p>
@@ -172,6 +231,25 @@
       document.getElementById(tabName).style.display = "block";
       evt.currentTarget.className += " active";
     }
+
+    window.onscroll = function() {
+        var indicator = document.querySelector(".indicator");
+        var scrollTop = document.documentElement.scrollTop;
+        var windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrollPercentage = (scrollTop / windowHeight) * 100;
+        indicator.style.width = scrollPercentage + "%";
+
+        var arrow = document.querySelector(".arrow");
+        if (scrollTop > 300) {
+            arrow.classList.remove("hidden");
+        } else {
+            arrow.classList.add("hidden");
+        }
+    };
+
+    document.querySelector(".arrow").addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 </script>
 
 </body>

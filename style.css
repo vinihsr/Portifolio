@@ -46,6 +46,7 @@ a {
     height: 80%;
 }
 
+
 .social-media h1{
     font-size: 80px;
     text-transform: uppercase;
@@ -71,7 +72,8 @@ h2{
     justify-content: center;
     transition: .5s ease-in-out;
     margin-top: 1rem;
-    background-color: #7adbd3;}
+    background-color: #7adbd3;
+}
 
 .social-media a:hover{
     background-color:cornflowerblue;
@@ -116,20 +118,21 @@ h2{
 .sobre{
     display: flex;
     justify-content: center;
-    width: 60rem;
+    width: 80rem;
     align-items: center;
     gap: 5%;
+    background-color: #e7e4e4;
 }
 
 .sobre h4{
     letter-spacing: 1px;
     line-height: 30px;
+    margin-left: 2%;
 }
 
 .sobre img{
     width: 20%;
-    height: 10%;
-    border-radius: 100%;
+    border-radius: 1%;
 }
 
 .container{
@@ -348,5 +351,64 @@ h2{
 
     .card-wrapper::before{ 
         border-radius: 0;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+/* Scroll Indicator */
+.indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #5328b8;
+    width: 0;
+    z-index: 1000;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: opacity 0.3s;
+    color: #5328b8;
+}
+
+.arrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 90%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 1rem;
+    color: #07e6e6;
+    animation: bounce 2s infinite;
+}
+
+.scroll-down .arrow-icon {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
     }
 }
