@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPython, FaPhp } from 'react-icons/fa';
+import imageHeader from '../src/assets/imageHeader.png'; 
+import profile from '../src/assets/profile.jpg'; // Adjust the path as necessary
 
 import './App.css';
 
@@ -57,7 +59,7 @@ const App: React.FC = () => {
             <a href="https://www.instagram.com/vinicius.scss/" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
           <div>
-            <img className="image" src="../src/assets/imageHeader.png" alt="Header" />
+            <img className="image" src={imageHeader} alt="Header" />
           </div>
         </div>
         <div className="scroll-down">
@@ -84,7 +86,7 @@ const App: React.FC = () => {
               Hoje, não consigo me ver trabalhando em outra área que não esteja relacionada à programação e ao desenvolvimento de softwares.
               É aqui que encontro desafios estimulantes e a realização profissional que tanto almejo.
             </h4>
-            <img src="../src/assets/profile.jpg" alt="Profile" />
+            <img src={profile} alt="Profile" />
           </div>
         </div>
 
