@@ -104,7 +104,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: bolder;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 0;
 }
 
@@ -129,7 +129,7 @@ h2 {
     background-color: #e7e4e4;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(59, 59, 59, 0.39);
 }
 
 .sobre h4 {
@@ -137,6 +137,7 @@ h2 {
     line-height: 30px;
     margin-left: 2%;
     text-align: justify;
+    color: #2c2c2c;
 }
 
 .sobre img {
@@ -162,6 +163,7 @@ h2 {
     width: 90%;
     padding-left: 5%;
     flex-wrap: wrap;
+     
 }
 
 .card {
@@ -281,15 +283,17 @@ footer {
     margin-top: 20px;
 }
 
-footer h1 {
-    font-size: large; /* Adjusted font size for smaller screens */
+.skills h1 {
+    font-size: large;
+    color: #ffffff; /* Adjusted font size for smaller screens */
 }
 
 .skills{
     display: flex;
-    gap: 30%;
+    gap: 25%;
     text-align: center;
     justify-content: center;
+    color: #ffffff;
 }
 
 
@@ -451,4 +455,11 @@ footer h1 {
     50% {
         transform: translateY(-10px);
     }
+}
+
+#linkExeption{
+    padding: 0;
+    border: 0px;
+    margin-left: 2px;
+    border-radius: 0;
 }

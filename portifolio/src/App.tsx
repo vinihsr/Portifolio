@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPython, FaPhp } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaPython, FaPhp, FaNodeJs } from 'react-icons/fa';
 import imageHeader from '../src/assets/imageHeader.png'; 
 import profile from '../src/assets/profile.jpg'; // Adjust the path as necessary
 
@@ -53,7 +53,7 @@ const App: React.FC = () => {
         <div className="header-content">
           <div className="social-media">
             <h1>Vinicius Henrique</h1>
-            <h2>Desenvolvedor front-end</h2>
+            <h2>front-end developer</h2>
             <a href="https://www.linkedin.com/in/vinicius-henrique-1a016524a/" target="_blank" rel="noopener noreferrer">Linkedin</a>
             <a href="https://github.com/vinihsr" target="_blank" rel="noopener noreferrer">Github</a>
             <a href="https://www.instagram.com/vinicius.scss/" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -91,15 +91,70 @@ const App: React.FC = () => {
         </div>
 
         <div id="projetos" className="tabcontent">
+
+        <div id="changedcard" className="card-container">
+        <div className="card-container">
+            <div className="card-text">
+              <p>manager made for the family micro-company VL EMBALAGENS, this is my main project, in which I defined a solid system to manage the expenses and earnings of such a company. Link to the Project:</p>
+              <a href="https://github.com/vinihsr/Cr1pt0gr4fe" target="_blank" rel="noopener noreferrer">project</a>
+            </div>
+            <div className="card">
+              <div className="card-wrapper">
+                <h2 style={{ fontSize: '30px' }}>Gerenciador VL</h2>
+                <p>Check the link</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="card-container">
+            <div className="card">
+              <div className="card-wrapper">
+                <h2>Dashboard</h2>
+                <p>Check the link</p>
+              </div>
+            </div>
+            <div className="card-text">
+              <p>Dashboard in Python to analyse some arquives and return in a beautiful dashboard using the framework Dash. Link to the Project:</p>
+              <a href="https://github.com/vinihsr/dash_app" target="_blank" rel="noopener noreferrer">project</a>
+            </div>
+          </div>
+
+        <div id="changedcard" className="card-container">
+            <div className="card-text">
+              <p>crud in react, make to simulate a system of a restaurant, to register and view the menu... <br /> and this project was buided in this ip: <a id="linkExeption" href="http://3.144.249.248/" target="_blank" rel="noopener noreferrer">3.144.249.248</a>  (the backend was not running, to avoid spam)</p>
+              <a href="http://vinihsr.github.io/SO_2/" target="_blank" rel="noopener noreferrer">project</a>
+            </div>
+            <div className="card">
+              <div className="card-wrapper">
+                <h2>SO TEST</h2>
+                <p>Check the link</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card-container">
+            <div className="card">
+              <div className="card-wrapper">
+                <h2>Cr1pt0gr4fe</h2>
+                <p>Check the link</p>
+              </div>
+            </div>
+            <div className="card-text">
+              <p>Cryptography to your passwords. Link to the Project:</p>
+              <a href="https://github.com/vinihsr/Cr1pt0gr4fe" target="_blank" rel="noopener noreferrer">project</a>
+            </div>
+          </div>
+          
           <div id="changedcard" className="card-container">
             <div className="card-text">
-              <p>Lista de afazeres feito com html, css e javascript. Link para o Projeto:</p>
-              <a href="http://vinihsr.github.io/ToDoList/" target="_blank" rel="noopener noreferrer">projeto</a>
+              <p>To-do list made with html, css and javascript. Link to the Project:</p>
+              <a href="http://vinihsr.github.io/ToDoList/" target="_blank" rel="noopener noreferrer">project</a>
             </div>
             <div className="card">
               <div className="card-wrapper">
                 <h2>To do list</h2>
-                <p>Confira o link</p>
+                <p>Check the link</p>
               </div>
             </div>
           </div>
@@ -108,24 +163,24 @@ const App: React.FC = () => {
             <div className="card">
               <div className="card-wrapper">
                 <h2>Password generator</h2>
-                <p>confira o link</p>
+                <p>Check the link</p>
               </div>
             </div>
             <div className="card-text">
-              <p>Gerador de senhas automatico feito com html, css e javascript. Link para o Projeto:</p>
-              <a href="http:////vinihsr.github.io/GeradorAutomatico/" target="_blank" rel="noopener noreferrer">projeto</a>
+              <p>Automatic password generator made with html, css and javascript. Link to the Project:</p>
+              <a href="http:////vinihsr.github.io/GeradorAutomatico/" target="_blank" rel="noopener noreferrer">project</a>
             </div>
           </div>
 
           <div id="changedcard" className="card-container">
             <div className="card-text">
-              <p>Calculadora feita com html, css e javascript. Link para o Projeto:</p>
-              <a href="http://vinihsr.github.io/calculadora_js/" target="_blank" rel="noopener noreferrer">projeto</a>
+              <p>Calculator made with html, css and javascript. Link to the Project:</p>
+              <a href="http://vinihsr.github.io/calculadora_js/" target="_blank" rel="noopener noreferrer">project</a>
             </div>
             <div className="card">
               <div className="card-wrapper">
                 <h2>Calculator</h2>
-                <p>confira o link</p>
+                <p>Check the link</p>
               </div>
             </div>
           </div>
@@ -134,48 +189,50 @@ const App: React.FC = () => {
             <div className="card">
               <div className="card-wrapper">
                 <h2>Automation projects</h2>
-                <p>confira o link</p>
+                <p>Check the link</p>
               </div>
             </div>
             <div className="card-text">
-              <p>Conjunto de projetos de automação, incluindo automação de hardware e automação web. Link para o repositório no github:</p>
-              <a href="http://github.com/vinihsr/projeto_de_automacao" target="_blank" rel="noopener noreferrer">repositório</a>
+              <p>Set of automation projects, including hardware automation and web automation. Link to repository on github:</p>
+              <a href="http://github.com/vinihsr/projeto_de_automacao" target="_blank" rel="noopener noreferrer">repository</a>
             </div>
           </div>
 
           <div id="changedcard" className="card-container">
             <div className="card-text">
-              <p>Jogo réplica de Flappy bird feito puramente com python. Link para o repositório no github:</p>
-              <a href="http://github.com/vinihsr/flappy-bird-simplegame" target="_blank" rel="noopener noreferrer">repositório</a>
+              <p>Flappy bird replica game made purely with python. Link to repository on github:</p>
+              <a href="http://github.com/vinihsr/flappy-bird-simplegame" target="_blank" rel="noopener noreferrer">repository</a>
             </div>
             <div className="card">
               <div className="card-wrapper">
                 <h2>Flappy bird simple game</h2>
-                <p>confira o link</p>
+                <p>Check the link</p>
               </div>
             </div>
           </div>
 
           <div className="card-container">
-            <div className="card-wrapper">
-              <h2 style={{ fontSize: '25px' }}>Data analysis with artificial intelligence</h2>
-              <p>confira o link</p>
+            <div className="card">
+              <div className="card-wrapper">
+                <h2 style={{ fontSize: '22px' }}>Data analysis with artificial intelligence</h2>
+                <p>Check the link</p>
+              </div>
             </div>
             <div className="card-text">
-              <p>Extração e obtenção de dados, ajuste, analise, modelagtem e interpretação geral de resultados. Link para o repositório no github:</p>
-              <a href="http://github.com/vinihsr/analise_de_dados_com_IA" target="_blank" rel="noopener noreferrer">repositório</a>
+              <p>Extraction and acquisition of data, adjustment, analysis, modeling and general interpretation of results. Link to repository on github:</p>
+              <a href="http://github.com/vinihsr/analise_de_dados_com_IA" target="_blank" rel="noopener noreferrer">repository</a>
             </div>
           </div>
 
           <div id="changedcard" className="card-container">
             <div className="card-text">
-              <p>Teste de envio de Emails e Sms com python, utilizando bibliotecas para ambos(pandas/ pywin32/ twilio). Link para o repositório no github:</p>
-              <a href="http://github.com/vinihsr/teste_envio_de_email_e_sms" target="_blank" rel="noopener noreferrer">repositório</a>
+              <p>Testing sending Emails and SMS with python, using libraries for both (pandas/ pywin32/ twilio). Link to repository on github:</p>
+              <a href="http://github.com/vinihsr/teste_envio_de_email_e_sms" target="_blank" rel="noopener noreferrer">repository</a>
             </div>
             <div className="card">
               <div className="card-wrapper">
                 <h2 style={{ fontSize: '30px' }}>Email e Sms sending test</h2>
-                <p>confira o link</p>
+                <p>Check the link</p>
               </div>
             </div>
           </div>
@@ -183,21 +240,21 @@ const App: React.FC = () => {
           <div className="card-container">
             <div className="card">
               <div className="card-wrapper">
-                <h2 style={{ fontSize: '25px' }}>CRUD simples em Java</h2>
-                <p>confira o link</p>
+                <h2 style={{ fontSize: '25px' }}>Java simple CRUD</h2>
+                <p>Check the link</p>
               </div>
             </div>
             <div className="card-text">
-              <p>Projeto CRUD simples em java com interação no banco de dados. Link para o repositório no github:</p>
-              <a href="http://github.com/vinihsr/projeto_java_crud" target="_blank" rel="noopener noreferrer">repositório</a>
+              <p>Simple CRUD project in Java with database interaction. Link to repository on github:</p>
+              <a href="http://github.com/vinihsr/projeto_java_crud" target="_blank" rel="noopener noreferrer">repository</a>
             </div>
           </div>
         </div>
       </main>
 
       <footer>
-        <h1>Minhas Habilidades:</h1>
         <ul className="skills">
+          <h1>My skills:</h1>
           <li>
             <div className='icon'><FaHtml5 /></div>
             <p>HTML</p>
@@ -213,6 +270,10 @@ const App: React.FC = () => {
           <li>
             <div className='icon'><FaReact /></div>
             <p>React</p>
+          </li>
+          <li>
+            <div className='icon'><FaNodeJs /></div>
+            <p>Node</p>
           </li>
           <li>
             <div className='icon'><FaPython /></div>
