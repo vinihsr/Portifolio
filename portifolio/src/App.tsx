@@ -70,21 +70,14 @@ const App: React.FC = () => {
 
       <main id="projects" className="container">
         <div className="tab">
-          <button className="tablinks active" onClick={(e) => openTab(e, 'sobre')}>Sobre</button>
-          <button className="tablinks" onClick={(e) => openTab(e, 'projetos')}>Projetos</button>
+          <button className="tablinks active" onClick={(e) => openTab(e, 'sobre')}>About</button>
+          <button className="tablinks" onClick={(e) => openTab(e, 'projetos')}>Projects</button>
         </div>
 
         <div id="sobre" className="tabcontent" style={{ display: 'block' }}>
           <div className="sobre">
             <h4>
-              Olá! Meu nome é Vinicius Henrique, tenho 20 anos e sou apaixonado pelo mundo da programação.
-              Minha jornada começou quando entrei na faculdade aos 18 anos e desde então mergulhei de cabeça nessa área fascinante.
-              Antes disso, eu trabalhava com vendas, seguindo os passos do meu pai, mas foi na programação que encontrei minha verdadeira paixão.
-              Nasci em Guaratinguetá, mas desde os 7 anos moro em São José dos Campos. Sempre fui aficionado por esportes e música,
-              são meus maiores hobbies e fontes de inspiração. Minha experiência na área de programação é breve, mas intensa.
-              Aprendi muito com as metodologias de ensino da minha faculdade e, principalmente, com minha própria determinação e vontade de aprender.
-              Hoje, não consigo me ver trabalhando em outra área que não esteja relacionada à programação e ao desenvolvimento de softwares.
-              É aqui que encontro desafios estimulantes e a realização profissional que tanto almejo.
+            Hello! My name is Vinicius Henrique, I'm 20 years old and I'm passionate about the world of programming. My journey began when I entered college at the age of 18 and since then I have immersed myself in this fascinating field. Before that, I worked in sales, following in my father's footsteps, but it was in programming that I found my true passion. I was born in Guaratinguetá, but since I was 7 years old I have lived in São José dos Campos. I have always been a fan of sports and music, they are my biggest hobbies and sources of inspiration. My experience in the programming area is brief, but intense. I learned a lot from the teaching methodologies at my college and, mainly, from my own determination and desire to learn. Today, I can't see myself working in any other area that isn't related to programming and software development. This is where I find stimulating challenges and the professional fulfillment that I so desire.
             </h4>
             <img src={profile} alt="Profile" />
           </div>
@@ -96,7 +89,7 @@ const App: React.FC = () => {
         <div className="card-container">
             <div className="card-text">
               <p>manager made for the family micro-company VL EMBALAGENS, this is my main project, in which I defined a solid system to manage the expenses and earnings of such a company. Link to the Project:</p>
-              <a href="https://github.com/vinihsr/Cr1pt0gr4fe" target="_blank" rel="noopener noreferrer">project</a>
+              <a href="https://github.com/vinihsr/Gerenciador_vl" target="_blank" rel="noopener noreferrer">project</a>
             </div>
             <div className="card">
               <div className="card-wrapper">
